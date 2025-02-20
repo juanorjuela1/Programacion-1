@@ -52,9 +52,11 @@ public class Ninio {
                 ", contactoAcudiente='" + contactoAcudiente + '\'' +
                 '}';
     }
-    public static void main(String[] args) {
-        Ninio nino1 = new Ninio("Juan", 5, "Masculino", 123456, "Ninguna", "Maria Perez", "3123456789");
-        System.out.println(nino1);
-    }
+
+        public static void main(String[] args) {
+            Ninio nino1 = new Ninio("Juan", 5, "Masculino", 123456, "Ninguna", "Maria Perez", "3123456789");
+            System.out.println(nino1);
+        }
+    
 
 }
