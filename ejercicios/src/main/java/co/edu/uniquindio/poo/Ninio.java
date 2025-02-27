@@ -1,62 +1,101 @@
 package co.edu.uniquindio.poo;
 
 public class Ninio {
-    private String nombre;
+
+    private String nombres;
     private int edad;
-    private String genero;
-    private int identificacion;
+    private String genero, documento;
     private String alergias;
     private String nombreAcudiente;
-    private String contactoAcudiente;
+    private String numeroContactoAcudiente;
+    private String ID;
 
-    public Ninio(String nombre, int edad, String genero, int identificacion, String alergias , String nombreAcudiente, String contactoAcudiente) {
-        this.nombre = nombre;
+    public Ninio(String nombres, int edad, String genero, String documento, String alergias, String nombreAcudiente, String numeroContactoAcudiente, String ID) {
+        this.nombres = nombres;
         this.edad = edad;
         this.genero = genero;
-        this.identificacion = identificacion;
+        this.documento = documento;
+        this.alergias = alergias;
         this.nombreAcudiente = nombreAcudiente;
-        this.contactoAcudiente = contactoAcudiente;
-
+        this.numeroContactoAcudiente = numeroContactoAcudiente;
+        this.ID = ID;
     }
 
-    public String getNombre() { return nombre; }
-    public void setNombre(String nombre) { this.nombre = nombre; }
+    public String getNombres() {
+        return nombres;
+    }
 
-    public int getEdad() { return edad; }
-    public void setEdad(int edad) { this.edad = edad; }
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
+    }
 
-    public String getGenero() { return genero; }
-    public void setGenero(String genero) { this.genero = genero; }
+    public String getID() {
+        return ID;
+    }
 
-    public int getIdentificacion() { return identificacion; }
-    public void setIdentificacion(int identificacion) { this.identificacion = identificacion; }
+    public void setID(String ID) {
+        this.ID = ID;
+    }
 
-    public String getAlergias() { return alergias; }
-    public void setAlergias(String alergias) { this.alergias = alergias; }
+    public String getNumeroContactoAcudiente() {
+        return numeroContactoAcudiente;
+    }
 
-    public String getNombreAcudiente() { return nombreAcudiente; }
-    public void setNombreAcudiente(String nombreAcudiente) { this.nombreAcudiente = nombreAcudiente; }
+    public void setNumeroContactoAcudiente(String numeroContactoAcudiente) {
+        this.numeroContactoAcudiente = numeroContactoAcudiente;
+    }
 
-    public String getContactoAcudiente() { return contactoAcudiente; }
-    public void setContactoAcudiente(String contactoAcudiente) { this.contactoAcudiente = contactoAcudiente; }
+    public String getNombreAcudiente() {
+        return nombreAcudiente;
+    }
+
+    public void setNombreAcudiente(String nombreAcudiente) {
+        this.nombreAcudiente = nombreAcudiente;
+    }
+
+    public String getAlergias() {
+        return alergias;
+    }
+
+    public void setAlergias(String alergias) {
+        this.alergias = alergias;
+    }
+
+    public String getGenero() {
+        return genero;
+    }
+
+    public void setGenero(String genero) {
+        this.genero = genero;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(String documento) {
+        this.documento = documento;
+    }
 
     @Override
     public String toString() {
         return "Ninio{" +
-                "nombre='" + nombre + '\'' +
+                "nombres='" + nombres + '\'' +
                 ", edad=" + edad +
                 ", genero='" + genero + '\'' +
-                ", identificacion=" + identificacion +
+                ", documento='" + documento + '\'' +
                 ", alergias='" + alergias + '\'' +
                 ", nombreAcudiente='" + nombreAcudiente + '\'' +
-                ", contactoAcudiente='" + contactoAcudiente + '\'' +
+                ", numeroContactoAcudiente='" + numeroContactoAcudiente + '\'' +
+                ", ID='" + ID + '\'' +
                 '}';
     }
-
-        public static void main(String[] args) {
-            Ninio nino1 = new Ninio("Juan", 5, "Masculino", 123456, "Ninguna", "Maria Perez", "3123456789");
-            System.out.println(nino1);
-        }
-    
-
 }
